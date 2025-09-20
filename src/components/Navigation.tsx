@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X, Smartphone } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,9 +9,9 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Academics", path: "/academics" },
-    { name: "Admissions", path: "/admissions" },
+    { name: "Phones", path: "/phones" },
+    { name: "Accessories", path: "/accessories" },
+    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -24,13 +24,13 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 hover:scale-105 transition-bounce">
             <div className="bg-gradient-hero p-2 rounded-lg shadow-elegant">
-              <GraduationCap className="h-6 w-6 text-primary-foreground" />
+              <Smartphone className="h-6 w-6 text-primary-foreground" />
             </div>
             <div className="hidden sm:block">
               <h1 className="font-display font-bold text-xl text-primary">
-                Solid Rock
+                Agyekum Annex
               </h1>
-              <p className="text-xs text-muted-foreground -mt-1">Educational Complex</p>
+              <p className="text-xs text-muted-foreground -mt-1">Phones & Accessories</p>
             </div>
           </Link>
 
@@ -46,9 +46,9 @@ const Navigation = () => {
                 </Button>
               </Link>
             ))}
-            <Link to="/admissions">
+            <Link to="/contact">
               <Button variant="cta" className="ml-4">
-                Enroll Today
+                Call Now
               </Button>
             </Link>
           </div>
@@ -80,9 +80,9 @@ const Navigation = () => {
                   </Button>
                 </Link>
               ))}
-              <Link to="/admissions" onClick={() => setIsOpen(false)}>
+              <Link to="/contact" onClick={() => setIsOpen(false)}>
                 <Button variant="cta" className="w-full mt-4">
-                  Enroll Today
+                  Call Now
                 </Button>
               </Link>
             </div>

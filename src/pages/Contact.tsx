@@ -24,7 +24,7 @@ const Contact = () => {
     
     // Create email content
     const emailBody = `
-New Contact Form Submission from Solid Rock Educational Complex Website:
+New Contact Form Submission from Agyekum Annex Website:
 
 Name: ${formData.name}
 Email: ${formData.email}
@@ -74,10 +74,10 @@ ${formData.message}
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-display font-bold text-4xl md:text-5xl text-primary mb-6">
-              Contact Us
+              Contact Agyekum Annex
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Get in touch with our team for information, support, or to schedule a visit.
+              Get in touch for product inquiries, orders, or customer support.
             </p>
           </div>
         </div>
@@ -116,10 +116,10 @@ ${formData.message}
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Contact us via email to receive our phone number for direct communication.
+                  Call us directly for immediate assistance with orders and inquiries.
                 </p>
-                <p className="text-primary font-medium">
-                  Phone available upon contact
+                <p className="text-primary font-medium text-lg">
+                  📞 0591576197
                 </p>
               </CardContent>
             </Card>
@@ -129,14 +129,14 @@ ${formData.message}
                 <div className="bg-accent p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <MapPin className="h-8 w-8 text-accent-foreground" />
                 </div>
-                <CardTitle className="text-xl text-primary">Visit Us</CardTitle>
+                <CardTitle className="text-xl text-primary">Visit Our Shop</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Schedule a visit to tour our facilities and meet our team.
+                  Visit our physical store to see products firsthand and get personalized service.
                 </p>
                 <p className="text-primary font-medium">
-                  Location details provided upon contact
+                  Location available upon contact
                 </p>
               </CardContent>
             </Card>
@@ -230,10 +230,10 @@ ${formData.message}
                       >
                         <option value="">Select a subject</option>
                         <option value="General Inquiry">General Inquiry</option>
-                        <option value="Admissions Information">Admissions Information</option>
-                        <option value="Academic Programs">Academic Programs</option>
-                        <option value="Schedule a Visit">Schedule a Visit</option>
-                        <option value="Support">Support</option>
+                        <option value="Product Information">Product Information</option>
+                        <option value="Order/Purchase">Order/Purchase</option>
+                        <option value="Technical Support">Technical Support</option>
+                        <option value="Warranty Claim">Warranty Claim</option>
                         <option value="Other">Other</option>
                       </select>
                     </div>
